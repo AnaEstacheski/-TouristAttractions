@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tourist Attractions</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <section class="tourist-spot-container">
+            <h2 class="tourist-spot-add-title">Adicionar um Ponto Turístico</h2>
+
+            <form class="tourist-spot-form">
+                <div class="tourist-spot-inputs">
+                    <div class="tourist-spot-image-wrapper">
+                        <label class="tourist-spot-image-label" for="spot-image">
+                            <span class="tourist-spot-image-span">Imagem</span>
+                            <input class="tourist-spot-image-input" type="file" name="spot-image" id="spot-image"
+                                accept="image/*" />
+                             <img class="tourist-spot-image-preview" src="" alt="" />
+                        </label>
+                    </div>
+
+                    <div class="tourist-spot-text-wrapper">
+                        <div class="tourist-spot-title-wrapper">
+                            <input class="tourist-spot-title-input" placeholder="Título" type="text" name="spot-title"
+                                id="spot-title" />
+                        </div>
+
+                        <div class="tourist-spot-description-wrapper">
+                            <textarea class="tourist-spot-description-input" placeholder="Descrição" type="text"
+                                name="spot-description" id="spot-description"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="tourist-spot-submit-wrapper">
+                    <button class="tourist-spot-submit-button" type="submit">Adicionar</button>
+                </div>
+            </form>
+
+            <div class="tourist-spot-result">
+                <h2 class="tourist-spot-result-title">Pontos Turísticos</h2>
+
+                <div class="tourist-spots-wrapper">
+
+                    <div class="tourist-spot">
+                        <img class="tourist-spot-image" src="./assets/paodeaçucar.png" alt="">
+                        <div class="tourist-spot-text">
+                            <h2 class="tourist-spot-title">Pão de Açúcar</h2>
+                            <p class="tourist-spot-description">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint.
+                                Velit officia consece duis enim velit mollit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tourist-spot">
+                        <img class="tourist-spot-image" src="./assets/ilhagrande.png" alt="">
+                        <div class="tourist-spot-text">
+                            <h2 class="tourist-spot-title">Ilha Grande</h2>
+                            <p class="tourist-spot-description">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint.
+                                Velit officia consece duis enim velit mollit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tourist-spot">
+                        <img class="tourist-spot-image" src="./assets/cristoredentor.png" alt="">
+                        <div class="tourist-spot-text">
+                            <h2 class="tourist-spot-title">Cristo Redentor</h2>
+                            <p class="tourist-spot-description">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint.
+                                Velit officia consece duis enim velit mollit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tourist-spot">
+                        <img class="tourist-spot-image" src="./assets/centrohistoricoparaty.png" alt="">
+                        <div class="tourist-spot-text">
+                            <h2 class="tourist-spot-title">Centro Histórico de Paraty</h2>
+                            <p class="tourist-spot-description">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa amet sint.
+                                Velit officia consece duis enim velit mollit.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="new-tourist-spots-wrapper">
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script/app.js"></script>
+</body>
+
+</html>

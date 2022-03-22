@@ -1,0 +1,111 @@
+.tourist-spot-form {
+    margin-bottom: 118px;
+}
+
+.tourist-spot-inputs {
+    display: flex;
+    max-width: 704px;
+    margin-bottom: 16px;
+}
+
+.tourist-spot-image-wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 282px;
+    height: 212px;
+}
+
+.tourist-spot-image-span {
+    font-size: 16px;
+    color: var(--gray-500);
+    text-align: center;
+}
+
+.tourist-spot-image-input {
+    display: none;
+}
+
+.tourist-spot-image-preview {
+    max-width: 282px;
+    max-height: 206px;
+    border-radius: 10px;
+}
+
+.tourist-spot-title-input {
+    width: 328px;
+    height: 56px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.tourist-spot-description-input {
+    width: 416px;
+    height: 136px;
+    padding-left: 20px;
+    padding-top: 16px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+}
+
+.tourist-spot-image-wrapper, 
+.tourist-spot-title-input, 
+.tourist-spot-description-input {
+    font-size: 16px;
+    background: var(--white);
+    border: 2px solid var(--gray-300);
+    border-radius: 10px;
+}
+
+.tourist-spot-submit-wrapper {
+    max-width: 704px;
+    text-align: right;
+}
+
+.tourist-spot-submit-button {
+    width: 100%;
+    max-width: 120px;
+    height: 56px;
+    border: 0;
+    border-radius: 10px;
+    color: var(--white);
+    background: var(--red-300);
+    transform: background-color 0.2s linear;
+}
+
+.tourist-spot-submit-button:hover {
+    background: var(--red-500);
+}
+
+.tourist-spot-submit-button:active {
+    background: var(--red-300);
+}
+
+@media screen and (max-width: 768px) {
+    .tourist-spot-inputs {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tourist-spot-image-input {
+        margin-bottom: 16px;
+    }
+
+    .tourist-spot-image-input, 
+    .tourist-spot-title-input, 
+    .tourist-spot-description-input {
+        width: 100%;
+    }
+
+    .tourist-spot-submit-wrapper {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .tourist-spot-submit-button {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+@import "global.css";
+@import "variables.css";
+@import "form.css";
+@import "spot.css";
+
+.tourist-spot-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.tourist-spot-add-title {
+    margin: 32px 0;
+    font-size: 32px;
+}
+
+.tourist-spot-add-title,
+.tourist-spot-result-title,
+.tourist-spot-title,
+.tourist-spot-submit-button {
+    font-family: 'Poppins', sans-serif;
+}
